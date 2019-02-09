@@ -7,14 +7,37 @@
 //
 
 import UIKit
+import CocoaMQTT
 
 class ViewController: UIViewController {
 
+    var stop = "stop"
+    var direction: [Int: String] = [0: "forward",
+                                    1: "backward",
+                                    2: "left",
+                                    3: "right"]
+    
+    let mqttClient = CocoaMQTT(clientID: "PiBotApp", host: "10.0.1.32", port: 1883)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    @IBAction func buttonDown(_ sender: UIButton) {
+        print("Sending message: \(direction[sender.tag]!)")
+        mqttClient.publish("pibot/move", withString: direction[sender.tag]!)
+    }
+    
+    
+    @IBAction func buttonUp(_ sender: UIButton) {
+        print("Sending message: \(stop)")
+        mqttClient.publish("pibot/move", withString: stop)
+    }
+    
 
-
+    @IBAction func connectButtonPressed(_ sender: UIButton) {
+        mqttClient.connect()
+    }
+    
 }
 

@@ -1,0 +1,20 @@
+# pibot-mqttclient.service
+#
+# create this file as:
+# sudo nano /lib/systemd/system/pibot-mqttclient.service
+
+# after saving, enable with the command:
+# sudo systemctl enable pibot-mqttclient.service
+
+# You can test if a service is running with:
+# sudo systemctl is-active pibot-mqttclient.service
+[Unit]
+Description=Pibot MQTT Script Service
+After=mosquitto.service
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/pi/control-pibot.py
+Restart=always
+[Install]
+WantedBy=multi-user.target

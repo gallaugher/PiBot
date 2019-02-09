@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,90 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PiBot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wZe-rZ-bgS">
+                                <rect key="frame" x="76" y="94" width="223" height="230"/>
+                                <subviews>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acc-V1-sIv">
+                                        <rect key="frame" x="0.0" y="70.666666666666657" width="69" height="89"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                        <state key="normal" title="⬅️"/>
+                                        <connections>
+                                            <action selector="buttonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Czm-FX-y3J"/>
+                                            <action selector="buttonUp:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="ZuK-SW-tMK"/>
+                                            <action selector="buttonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="azb-v2-5fR"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="MAs-8a-L2I">
+                                        <rect key="frame" x="77" y="0.0" width="69" height="230"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eB4-uq-tRh">
+                                                <rect key="frame" x="0.0" y="0.0" width="69" height="89"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                                <state key="normal" title="⬆️"/>
+                                                <connections>
+                                                    <action selector="buttonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="gLn-h4-czh"/>
+                                                    <action selector="buttonUp:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="RWt-ev-sn6"/>
+                                                    <action selector="buttonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mvj-tK-PvZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gL2-uw-oLB">
+                                                <rect key="frame" x="0.0" y="141" width="69" height="89"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                                <state key="normal" title="⬇️"/>
+                                                <connections>
+                                                    <action selector="buttonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="t7a-Ny-N9c"/>
+                                                    <action selector="buttonUp:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="5wV-yx-J6W"/>
+                                                    <action selector="buttonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGh-Mk-p6Z"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2O-1h-U9R">
+                                        <rect key="frame" x="154" y="70.666666666666657" width="69" height="89"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                        <state key="normal" title="➡️"/>
+                                        <connections>
+                                            <action selector="buttonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="5rL-gI-3A2"/>
+                                            <action selector="buttonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NUc-Lu-3Bm"/>
+                                            <action selector="buttonUp:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="v3h-4E-Op4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="Q1c-W6-ZOx"/>
+                                    <constraint firstAttribute="width" constant="223" id="cEq-1M-Kgu"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLj-tD-Fga">
+                                <rect key="frame" x="96.666666666666686" y="364" width="182" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="F5e-zV-Fgc"/>
+                                    <constraint firstAttribute="width" constant="182" id="fqy-s3-JgQ"/>
+                                </constraints>
+                                <state key="normal" title="Connect to Robot"/>
+                                <connections>
+                                    <action selector="connectButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wCy-ak-rIl"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wZe-rZ-bgS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IKX-jo-tE0"/>
+                            <constraint firstItem="wZe-rZ-bgS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="ioR-lj-EhT"/>
+                            <constraint firstItem="OLj-tD-Fga" firstAttribute="top" secondItem="wZe-rZ-bgS" secondAttribute="bottom" constant="40" id="jfu-DE-tCc"/>
+                            <constraint firstItem="OLj-tD-Fga" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wZa-Lg-EQW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="136.69950738916256"/>
         </scene>
     </scenes>
 </document>

@@ -1,0 +1,6 @@
+framework module Pods_PiBot {
+  umbrella header "Pods-PiBot-umbrella.h"
+
+  export *
+  module * { export * }
+}
