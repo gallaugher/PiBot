@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E106ED5220F5AB600A3B8D5 /* control-pibot.py in Resources */ = {isa = PBXBuildFile; fileRef = 3E106ED2220F5AB600A3B8D5 /* control-pibot.py */; };
-		3E106ED6220F5AB600A3B8D5 /* pibottest.py in Resources */ = {isa = PBXBuildFile; fileRef = 3E106ED3220F5AB600A3B8D5 /* pibottest.py */; };
-		3E106ED7220F5AB600A3B8D5 /* pibot-mqttclient-service in Resources */ = {isa = PBXBuildFile; fileRef = 3E106ED4220F5AB600A3B8D5 /* pibot-mqttclient-service */; };
+		3E106EDB220F5C5C00A3B8D5 /* pibottest.py in Resources */ = {isa = PBXBuildFile; fileRef = 3E106ED8220F5C5C00A3B8D5 /* pibottest.py */; };
+		3E106EDC220F5C5C00A3B8D5 /* control-pibot.py in Resources */ = {isa = PBXBuildFile; fileRef = 3E106ED9220F5C5C00A3B8D5 /* control-pibot.py */; };
+		3E106EDD220F5C5C00A3B8D5 /* pibot-mqttclient-service in Resources */ = {isa = PBXBuildFile; fileRef = 3E106EDA220F5C5C00A3B8D5 /* pibot-mqttclient-service */; };
 		3EF917E1220F482800B744E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF917E0220F482800B744E2 /* AppDelegate.swift */; };
 		3EF917E3220F482800B744E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF917E2220F482800B744E2 /* ViewController.swift */; };
 		3EF917E6220F482800B744E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF917E4220F482800B744E2 /* Main.storyboard */; };
@@ -20,9 +20,9 @@
 
 /* Begin PBXFileReference section */
 		307CB36A38ABD9C348F13EE0 /* Pods-PiBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiBot.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiBot/Pods-PiBot.release.xcconfig"; sourceTree = "<group>"; };
-		3E106ED2220F5AB600A3B8D5 /* control-pibot.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "control-pibot.py"; sourceTree = "<group>"; };
-		3E106ED3220F5AB600A3B8D5 /* pibottest.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pibottest.py; sourceTree = "<group>"; };
-		3E106ED4220F5AB600A3B8D5 /* pibot-mqttclient-service */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pibot-mqttclient-service"; sourceTree = "<group>"; };
+		3E106ED8220F5C5C00A3B8D5 /* pibottest.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pibottest.py; sourceTree = SOURCE_ROOT; };
+		3E106ED9220F5C5C00A3B8D5 /* control-pibot.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "control-pibot.py"; sourceTree = SOURCE_ROOT; };
+		3E106EDA220F5C5C00A3B8D5 /* pibot-mqttclient-service */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pibot-mqttclient-service"; sourceTree = SOURCE_ROOT; };
 		3EF917DD220F482800B744E2 /* PiBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EF917E0220F482800B744E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EF917E2220F482800B744E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,9 +73,9 @@
 				3EF917E7220F482900B744E2 /* Assets.xcassets */,
 				3EF917E9220F482900B744E2 /* LaunchScreen.storyboard */,
 				3EF917EC220F482900B744E2 /* Info.plist */,
-				3E106ED2220F5AB600A3B8D5 /* control-pibot.py */,
-				3E106ED4220F5AB600A3B8D5 /* pibot-mqttclient-service */,
-				3E106ED3220F5AB600A3B8D5 /* pibottest.py */,
+				3E106ED9220F5C5C00A3B8D5 /* control-pibot.py */,
+				3E106EDA220F5C5C00A3B8D5 /* pibot-mqttclient-service */,
+				3E106ED8220F5C5C00A3B8D5 /* pibottest.py */,
 			);
 			path = PiBot;
 			sourceTree = "<group>";
@@ -157,12 +157,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E106ED7220F5AB600A3B8D5 /* pibot-mqttclient-service in Resources */,
+				3E106EDD220F5C5C00A3B8D5 /* pibot-mqttclient-service in Resources */,
 				3EF917EB220F482900B744E2 /* LaunchScreen.storyboard in Resources */,
-				3E106ED6220F5AB600A3B8D5 /* pibottest.py in Resources */,
+				3E106EDC220F5C5C00A3B8D5 /* control-pibot.py in Resources */,
+				3E106EDB220F5C5C00A3B8D5 /* pibottest.py in Resources */,
 				3EF917E8220F482900B744E2 /* Assets.xcassets in Resources */,
 				3EF917E6220F482800B744E2 /* Main.storyboard in Resources */,
-				3E106ED5220F5AB600A3B8D5 /* control-pibot.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
