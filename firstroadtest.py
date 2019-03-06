@@ -1,5 +1,13 @@
 from adafruit_motorkit import MotorKit
 kit = MotorKit()
+# NOTE: If using the Waveshare Motor Driver Hat, change the above line to:
+# kit = MotorKit(0x40)
+# Also, only if using the Waveshare Motor Driver Hat, be sure you've installed
+# and modified CircuitPython files, in particular the file at:
+# /usr/local/lib/python3.5/dist-packages/adafruit_motorkit.py
+# as described in the tutorial at:
+# https://gallaugher.com/makersnack-install-and-test-the-waveshare-raspberry-pi/
+
 import time
 
 # Forward at full throttle

@@ -17,7 +17,8 @@ class ViewController: UIViewController {
                                     2: "left",
                                     3: "right"]
     
-    let mqttClient = CocoaMQTT(clientID: "PiBotApp", host: "10.0.1.32", port: 1883)
+    let mqttClient = CocoaMQTT(clientID: "PiBotApp", host: "pibot", port: 1883)
+    // let mqttClient = CocoaMQTT(clientID: "PiBotApp", host: "10.0.1.32", port: 1883)
     
     override func viewDidLoad() {
         super.viewDidLoad()
