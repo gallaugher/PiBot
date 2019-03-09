@@ -18,7 +18,7 @@ class ViewController: UIViewController {
                                     3: "right"]
     
     // *** IMPORTANT NOTE: Make sure your host name is entered properly, below ***
-    let mqttClient = CocoaMQTT(clientID: "PiBotApp", host: "pibot.local", port: 1883)
+    let mqttClient = CocoaMQTT(clientID: "PiBotApp", host: "zerobot.local", port: 1883)
     // let mqttClient = CocoaMQTT(clientID: "PiBotApp", host: "zerobot.local", port: 1883)
     // If you still have problems, make sure spelling is exactly as you've named your Pi
     // and is what you use when you ssh log in.
